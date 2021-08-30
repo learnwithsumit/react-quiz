@@ -1,0 +1,111 @@
+.miniPlayer {
+  width: 320px;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+
+.miniPlayer img {
+  width: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  animation: miniplayerAnim 0.3s ease forwards;
+}
+
+.miniPlayer .open {
+  display: none;
+}
+
+.miniPlayer .close {
+  display: block;
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 20px;
+  padding: 5px 0 0 3px;
+}
+
+.miniPlayer .close:hover {
+  color: #666666;
+  cursor: pointer;
+  outline: 0;
+}
+
+@keyframes miniplayerAnim {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.miniPlayer p {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 10px 0;
+  color: var(--fontPrimary);
+}
+
+@media only screen and (max-width: 1536px) {
+  .miniPlayer {
+    transition: transform 0.3s ease;
+  }
+}
+
+.floatingBtn {
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 10px;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: var(--fontPrimary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.floatingBtn:hover {
+  background-color: var(--successGreen);
+}
+
+.floatingBtn:hover span {
+  color: var(--fontPrimary);
+}
+
+.floatingBtn p {
+  display: none;
+}
+
+.floatingBtn img {
+  transform: scale(0);
+  display: none;
+}
+
+.floatingBtn span {
+  color: var(--successGreen);
+  font-weight: 500;
+}
+
+.floatingBtn .open {
+  display: block;
+}
+
+.floatingBtn .close {
+  display: none;
+}
