@@ -1,0 +1,13 @@
+.account {
+  width: 50%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 12px;
+}
+
+.account > span:last-child {
+  cursor: pointer;
+}
