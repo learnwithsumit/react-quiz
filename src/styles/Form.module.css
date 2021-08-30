@@ -1,0 +1,20 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem 0;
+}
+
+.form label {
+  margin-top: 1rem;
+}
+
+.form .button {
+  height: 44px;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
