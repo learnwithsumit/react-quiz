@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="React Quiz Project by Learn with Sumit" />
+    <meta property="og:description" content="React Quiz Project under Learn with Sumit React Tutorial Series playlist" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/quiz.css" />
+
+    <title>Login - Learn with Sumit</title>
+  </head>
+  <body>
+    <!-- Navigatin Bar -->
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="index.html" class="brand">
+            <img src="./images/logo-bg.png" alt="Learn with Sumit Logo" />
+            <h3>Learn with Sumit</h3>
+          </a>
+        </li>
+      </ul>
+      <div class="account">
+        <span class="material-icons-outlined" title="Account"> account_circle </span>
+        <a href="signup.html">Signup</a>
+        <!-- <span class="material-icons-outlined" title="Logout"> logout </span> -->
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <h1>Login to your account</h1>
+        <div class="column">
+          <div class="illustration">
+            <img src="./images/login.svg" alt="Login" />
+          </div>
+          <form class="login form" action="#">
+            <div class="textInput">
+              <input type="text" placeholder="Enter email" />
+              <span class="material-icons-outlined"> alternate_email </span>
+            </div>
+
+            <div class="textInput">
+              <input type="password" placeholder="Enter password" />
+              <span class="material-icons-outlined"> lock </span>
+            </div>
+
+            <button class="button">
+              <span>Submit now</span>
+            </button>
+
+            <div class="info">Don't have an account? <a href="signup.html">Signup</a> instead.</div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
