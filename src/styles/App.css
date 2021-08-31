@@ -60,3 +60,19 @@ h4 {
     grid-template-columns: 1fr;
   }
 }
+
+.infinite-scroll-component {
+  width: 100%;
+  display: grid;
+  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 20px;
+  row-gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .infinite-scroll-component {
+    width: 90%;
+  }
+}
