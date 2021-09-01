@@ -8,20 +8,19 @@
   box-sizing: border-box;
   border: 1px solid hsl(0, 0%, 86%);
   border-radius: 5px;
+  transition: right 0.4s ease;
 }
 
-.miniPlayer img {
+.miniPlayer .player {
   width: 300px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
   animation: miniplayerAnim 0.3s ease forwards;
 }
 
-.miniPlayer .open {
+.open {
   display: none;
 }
 
-.miniPlayer .close {
+.close {
   display: block;
   position: absolute;
   right: -8px;
@@ -36,7 +35,7 @@
   padding: 5px 0 0 3px;
 }
 
-.miniPlayer .close:hover {
+.close:hover {
   color: #666666;
   cursor: pointer;
   outline: 0;
@@ -77,6 +76,7 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
   user-select: none;
 }
 
@@ -92,7 +92,7 @@
   display: none;
 }
 
-.floatingBtn img {
+.floatingBtn .player {
   transform: scale(0);
   display: none;
 }
