@@ -188,11 +188,11 @@
   animation: miniplayerAnim 0.3s ease forwards;
 }
 
-.miniPlayer .open {
+.open {
   display: none;
 }
 
-.miniPlayer .close {
+.close {
   display: block;
   position: absolute;
   right: -8px;
@@ -207,7 +207,7 @@
   padding: 5px 0 0 3px;
 }
 
-.miniPlayer .close:hover {
+.close:hover {
   color: #666666;
   cursor: pointer;
   outline: 0;
